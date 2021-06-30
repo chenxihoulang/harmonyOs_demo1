@@ -1,27 +1,55 @@
+//打包hap包的插件
 apply plugin: 'com.huawei.ohos.hap'
 apply plugin: 'com.huawei.ohos.decctest'
 //For instructions on signature configuration, see https://developer.harmonyos.com/cn/docs/documentation/doc-guides/ide_debug_device-0000001053822404#ZH-CN_TOPIC_0000001154985555__section1112183053510
 ohos {
+    //应用编译构建的目标SDK版本
     compileSdkVersion 5
     defaultConfig {
-        compatibleSdkVersion 4
+        //应用兼容的最低SDK版本
+        compatibleSdkVersion 5
     }
     buildTypes {
+        //构建Release类型的hap包或APP时的混淆功能设置
         release {
             proguardOpt {
-                proguardEnabled false
+                //开启代码混淆功能
+                proguardEnabled true
+                // 配置混淆规则文件相对路径
                 rulesFiles 'proguard-rules.pro'
             }
         }
     }
-    
+
+    externalNativeBuild {
+        path "src/main/cpp/CMakeLists.txt"   //CMake配置入口，提供CMake构建脚本的相对路径
+        arguments "-v"    //传递给CMake的可选编译参数
+        abiFilters "arm64-v8a"     //用于设置本机的ABI编译环境
+        cppFlags ""   //设置C++编译器的可选参数
+    }
+
+    signingConfigs {
+
+    }
+    //合并JS代码打包时，请在ohos闭包下手动添加，true表示需要合并JS代码，false表示不需要合并JS代码
+    mergeJsSrc true
+
+    //是否支持数据库注释
+    compileOptions {
+        annotationEnabled true   //true表示支持，false表示不支持
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.har'])
     testImplementation 'junit:junit:4.13'
     ohosTestImplementation 'com.huawei.ohos.testkit:runner:1.0.0.100'
+
+    implementation project(":har1")
+    implementation project(":javaLib1")
 }
 decc {
-    supportType = ['html','xml']
+    supportType = ['html', 'xml']
 }

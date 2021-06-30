@@ -5,10 +5,11 @@ apply plugin: 'com.huawei.ohos.app'
 ohos {
     compileSdkVersion 5
     defaultConfig {
-        compatibleSdkVersion 4
+        compatibleSdkVersion 5
     }
 }
-	
+
+//Gradle脚本执行依赖，包括Maven仓地址和HarmonyOS编译构建插件
 buildscript {
     repositories {
         maven {
@@ -20,11 +21,13 @@ buildscript {
 		jcenter()
     }
     dependencies {
+        //gradle 6.3
         classpath 'com.huawei.ohos:hap:2.4.5.0'
         classpath 'com.huawei.ohos:decctest:1.2.4.1'
     }
 }
 
+//工程自身所需要的依赖，比如引用第三方库的Maven仓库和依赖包
 allprojects {
     repositories {
         maven {

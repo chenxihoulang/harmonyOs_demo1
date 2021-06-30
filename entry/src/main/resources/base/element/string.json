@@ -59,6 +59,30 @@
     {
       "name": "loginFail",
       "value": "Error mail or password"
+    },
+    {
+      "name": "dataability_description",
+      "value": "hap sample empty provider"
+    },
+    {
+      "name": "serviceability_description",
+      "value": "hap sample empty service"
+    },
+    {
+      "name": "mainability2_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability2_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_MainAbility2",
+      "value": "entry_MainAbility2"
+    },
+    {
+      "name": "serviceability2_description",
+      "value": "hap sample empty service"
     }
   ]
 }

@@ -48,6 +48,40 @@
         "label": "$string:entry_MainAbility",
         "type": "page",
         "launchType": "standard"
+      },
+      {
+        "permissions": [
+          "com.example.myapplication.DataAbilityShellProvider.PROVIDER"
+        ],
+        "name": "com.example.myapplication.DataAbility",
+        "icon": "$media:icon",
+        "description": "$string:dataability_description",
+        "type": "data",
+        "uri": "dataability://com.example.myapplication.DataAbility"
+      },
+      {
+        "name": "com.example.myapplication.ServiceAbility",
+        "icon": "$media:icon",
+        "description": "$string:serviceability_description",
+        "type": "service"
+      },
+      {
+        "orientation": "unspecified",
+        "name": "com.example.myapplication.MainAbility2",
+        "icon": "$media:icon",
+        "description": "$string:mainability2_description",
+        "label": "$string:entry_MainAbility2",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "backgroundModes": [
+          "dataTransfer"
+        ],
+        "name": "com.example.myapplication.ServiceAbility2",
+        "icon": "$media:icon",
+        "description": "$string:serviceability2_description",
+        "type": "service"
       }
     ]
   }

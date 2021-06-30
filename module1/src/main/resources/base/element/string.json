@@ -11,6 +11,14 @@
     {
       "name": "mainability_HelloWorld",
       "value": "Hello World"
+    },
+    {
+      "name": "widget_title",
+      "value": "Title"
+    },
+    {
+      "name": "widget_introduction",
+      "value": "Introduction"
     }
   ]
 }

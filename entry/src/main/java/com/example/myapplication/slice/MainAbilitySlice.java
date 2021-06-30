@@ -222,8 +222,7 @@ public class MainAbilitySlice extends AbilitySlice {
 
             // Get circleProgress animation
             Component circleProgress = drawCircleProgress(AttrHelper.vp2px(6, this), AttrHelper.vp2px(3, this));
-            commonDialog
-                    .setContentCustomComponent(circleProgress)
+            commonDialog.setContentCustomComponent(circleProgress)
                     .setTransparent(true)
                     .setSize(
                             DirectionalLayout.LayoutConfig.MATCH_CONTENT, DirectionalLayout.LayoutConfig.MATCH_CONTENT);
@@ -257,36 +256,34 @@ public class MainAbilitySlice extends AbilitySlice {
         Component circleProgress = new Component(this);
         circleProgress.setComponentSize(AttrHelper.vp2px(100, this), AttrHelper.vp2px(100, this));
         circleProgress.setBackground(new ShapeElement(this, ResourceTable.Graphic_login_dialog_bg));
-
         // Draw the animation
-        circleProgress.addDrawTask(
-                (component, canvas) -> {
-                    // Reset when a round
-                    if (roateNum == circleNum) {
-                        roateNum = 0;
-                    }
+        circleProgress.addDrawTask((component, canvas) -> {
+            // Reset when a round
+            if (roateNum == circleNum) {
+                roateNum = 0;
+            }
 
-                    // Rotate the canvas
-                    canvas.rotate(30 * roateNum, (float) (component.getWidth() / 2), (float) (component.getHeight() / 2));
-                    roateNum++;
-                    int radius = (Math.min(component.getWidth(), component.getHeight())) / 2 - maxRadius;
-                    float radiusIncrement = (float) (maxRadius - minRadius) / circleNum;
-                    double angle = 2 * Math.PI / circleNum;
+            // Rotate the canvas
+            canvas.rotate(30 * roateNum, (float) (component.getWidth() / 2), (float) (component.getHeight() / 2));
+            roateNum++;
+            int radius = (Math.min(component.getWidth(), component.getHeight())) / 2 - maxRadius;
+            float radiusIncrement = (float) (maxRadius - minRadius) / circleNum;
+            double angle = 2 * Math.PI / circleNum;
 
-                    // Draw the small circle
-                    for (int i = 0; i < circleNum; i++) {
-                        float x = (float) (component.getWidth() / 2 + Math.cos(i * angle) * radius);
-                        float y = (float) (component.getHeight() / 2 - Math.sin(i * angle) * radius);
-                        paint.setAlpha((1 - (float) i / circleNum));
-                        canvas.drawCircle(x, y, maxRadius - radiusIncrement * i, paint);
-                    }
+            // Draw the small circle
+            for (int i = 0; i < circleNum; i++) {
+                float x = (float) (component.getWidth() / 2 + Math.cos(i * angle) * radius);
+                float y = (float) (component.getHeight() / 2 - Math.sin(i * angle) * radius);
+                paint.setAlpha((1 - (float) i / circleNum));
+                canvas.drawCircle(x, y, maxRadius - radiusIncrement * i, paint);
+            }
 
-                    // Refresh the component delay
-                    getUITaskDispatcher()
-                            .delayDispatch(
-                                    circleProgress::invalidate,
-                                    150);
-                });
+            // Refresh the component delay
+            getUITaskDispatcher()
+                    .delayDispatch(
+                            circleProgress::invalidate,
+                            150);
+        });
         return circleProgress;
     }
 

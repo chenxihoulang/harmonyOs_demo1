@@ -1,3 +1,4 @@
+//将Java Library打包为jar的插件
 apply plugin: 'java-library'
 
 dependencies {

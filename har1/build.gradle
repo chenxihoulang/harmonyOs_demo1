@@ -1,3 +1,4 @@
+//将HarmonyOS Library打包为har的插件
 apply plugin: 'com.huawei.ohos.library'
 //For instructions on signature configuration, see https://developer.harmonyos.com/cn/docs/documentation/doc-guides/ide_debug_device-0000001053822404#ZH-CN_TOPIC_0000001154985555__section1112183053510
 ohos {
@@ -8,8 +9,13 @@ ohos {
     buildTypes {
         release {
             proguardOpt {
-                proguardEnabled false
+                //开启代码混淆功能
+                proguardEnabled true
+                // 配置混淆规则文件相对路径
                 rulesFiles 'proguard-rules.pro'
+                //配置打包混淆规则文件相对路径，仅在HarmonyOS Library模块中配置
+                //HarmonyOS Library模块中的混淆规则文件consumerRulesFiles，在编译时会打包到har包中，并更名为“proguard.txt
+                consumerRulesFiles 'consumer-rules.pro'
             }
         }
     }

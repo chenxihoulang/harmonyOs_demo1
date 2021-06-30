@@ -1,1 +1,1 @@
-include ':entry', ':module1', ':har1', ':javaLib1'
+include ':entry', ':module1', ':har1', ':javaLib1', ':card1'
