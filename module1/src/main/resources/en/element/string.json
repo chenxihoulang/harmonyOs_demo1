@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module1_MainAbility",
+      "value": "module1_MainAbility"
+    },
+    {
+      "name": "mainability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability_HelloWorld",
+      "value": "Hello World"
+    }
+  ]
+}
