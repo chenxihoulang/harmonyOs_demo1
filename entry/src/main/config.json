@@ -1,6 +1,6 @@
 {
   "app": {
-    "bundleName": "com.example.myapplication",
+    "bundleName": "com.chw.pktest",
     "vendor": "example",
     "version": {
       "code": 1000000,
@@ -9,9 +9,9 @@
   },
   "deviceConfig": {},
   "module": {
-    "package": "com.example.myapplication",
+    "package": "com.chw.pktest",
     "name": ".MyApplication",
-    "mainAbility": "com.example.myapplication.MainAbility",
+    "mainAbility": "com.chw.pktest.MainAbility",
     "deviceType": [
       "phone"
     ],
@@ -35,39 +35,62 @@
             ],
             "actions": [
               "action.system.home"
+            ],
+            "uris": [
+              {
+                "scheme": "http",
+                "host": "www.xxx.com",
+                "port": "8080",
+                "path": "query/student/name",
+                "type": "text/*"
+              }
             ]
           }
         ],
         "orientation": "unspecified",
-        "name": "com.example.myapplication.MainAbility",
+        "name": "com.chw.pktest.MainAbility",
         "icon": "$media:icon",
         "description": "$string:mainability_description",
         "configChanges": [
-          "orientation"
+          "orientation",
+          "fontSize",
+          "layout"
         ],
         "label": "$string:entry_MainAbility",
         "type": "page",
-        "launchType": "standard"
+        "launchType": "standard",
+        "visible": true,
+        "uri": "pk://www.chw.com/test/?q=s",
+        "deviceCapability": [
+        ],
+        "mission": "chw.pktest.com",
+        "targetAbility": ""
       },
       {
         "permissions": [
           "com.example.myapplication.DataAbilityShellProvider.PROVIDER"
         ],
-        "name": "com.example.myapplication.DataAbility",
+        "readPermission": "ohos.permission.READ_MEDIA",
+        "writePermission": "ohos.permission.READ_MEDIA",
+        "name": "com.chw.pktest.DataAbility",
         "icon": "$media:icon",
         "description": "$string:dataability_description",
         "type": "data",
         "uri": "dataability://com.example.myapplication.DataAbility"
       },
       {
-        "name": "com.example.myapplication.ServiceAbility",
+        "name": "com.chw.pktest.ServiceAbility",
         "icon": "$media:icon",
         "description": "$string:serviceability_description",
-        "type": "service"
+        "type": "service",
+        "backgroundModes": [
+          "dataTransfer",
+          "location"
+        ]
       },
       {
         "orientation": "unspecified",
-        "name": "com.example.myapplication.MainAbility2",
+        "name": "com.chw.pktest.MainAbility2",
         "icon": "$media:icon",
         "description": "$string:mainability2_description",
         "label": "$string:entry_MainAbility2",
@@ -78,10 +101,22 @@
         "backgroundModes": [
           "dataTransfer"
         ],
-        "name": "com.example.myapplication.ServiceAbility2",
+        "name": "com.chw.pktest.ServiceAbility2",
         "icon": "$media:icon",
         "description": "$string:serviceability2_description",
         "type": "service"
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.READ_MEDIA",
+        "reason": "需要存储权限",
+        "usedScene": {
+          "ability": [
+            "com.chw.pktest.MainAbility"
+          ],
+          "when": "inuse"
+        }
       }
     ]
   }

@@ -1,6 +1,12 @@
 //打包hap包的插件
 apply plugin: 'com.huawei.ohos.hap'
 apply plugin: 'com.huawei.ohos.decctest'
+
+//加载签名信息配置文件
+def signingConfigPropsFile = rootProject.file("signing-config.properties")
+def signingConfigProps = new Properties()
+signingConfigProps.load((new FileInputStream(signingConfigPropsFile)))
+
 //For instructions on signature configuration, see https://developer.harmonyos.com/cn/docs/documentation/doc-guides/ide_debug_device-0000001053822404#ZH-CN_TOPIC_0000001154985555__section1112183053510
 ohos {
     //应用编译构建的目标SDK版本
@@ -9,6 +15,20 @@ ohos {
         //应用兼容的最低SDK版本
         compatibleSdkVersion 5
     }
+
+    //配置签名信息索引
+    signingConfigs {
+        release {
+            storeFile file(signingConfigProps['storeFile'])
+            storePassword signingConfigProps['storePassword']
+            keyAlias signingConfigProps['keyAlias']
+            keyPassword signingConfigProps['keyPassword']
+            signAlg = 'SHA256withECDSA'
+            profile file(signingConfigProps['profile'])
+            certpath file(signingConfigProps['certpath'])
+        }
+    }
+
     buildTypes {
         //构建Release类型的hap包或APP时的混淆功能设置
         release {
@@ -18,6 +38,12 @@ ohos {
                 // 配置混淆规则文件相对路径
                 rulesFiles 'proguard-rules.pro'
             }
+
+            signingConfig signingConfigs.release
+        }
+
+        debug {
+            signingConfig signingConfigs.release
         }
     }
 
@@ -28,9 +54,6 @@ ohos {
         cppFlags ""   //设置C++编译器的可选参数
     }
 
-    signingConfigs {
-
-    }
     //合并JS代码打包时，请在ohos闭包下手动添加，true表示需要合并JS代码，false表示不需要合并JS代码
     mergeJsSrc true
 

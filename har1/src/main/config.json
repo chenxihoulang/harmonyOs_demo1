@@ -10,7 +10,7 @@
   "deviceConfig": {
   },
   "module": {
-    "package": "com.example.har1",
+    "package": "com.chw.har1",
     "deviceType": [
       "phone"
     ],

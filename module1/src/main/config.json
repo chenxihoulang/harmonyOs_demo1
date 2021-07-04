@@ -1,17 +1,47 @@
 {
   "app": {
+    "apiVersion": {
+      "target": 5,
+      "compatible": 4
+    },
     "bundleName": "com.example.myapplication",
     "vendor": "example",
     "version": {
       "code": 1000000,
-      "name": "1.0.0"
+      "name": "1.0.0",
+      "minCompatibleVersionCode": 5
+    },
+    "smartWindowSize": "200*200",
+    "smartWindowDeviceType": [
+      "phone"
+    ],
+    "targetBundleList": [
+    ]
+  },
+  "deviceConfig": {
+    "default": {
+      "process": "com.chw.pktest",
+      "supportBackup": false,
+      "network": {
+        "cleartextTraffic": true,
+        "securityConfig": {
+          "domainSettings": {
+            "cleartextPermitted": true,
+            "domains": [
+              {
+                "subdomains": true,
+                "name": "www.chw.com"
+              }
+            ]
+          }
+        }
+      }
     }
   },
-  "deviceConfig": {},
   "module": {
-    "package": "com.example.module1",
+    "package": "com.chw.module1",
     "name": ".MyApplication",
-    "mainAbility": "com.example.module1.MainAbility",
+    "mainAbility": "com.chw.module1.MainAbility",
     "deviceType": [
       "phone"
     ],
@@ -21,11 +51,28 @@
       "moduleType": "feature",
       "installationFree": false
     },
+    "metaData": {
+      "parameters" : [{
+        "name" : "string",
+        "type" : "Float",
+        "description" : "$string:parameters_description"
+      }],
+      "results" : [{
+        "name" : "string",
+        "type" : "Float",
+        "description" : "$string:results_description"
+      }],
+      "customizeData" : [{
+        "name" : "string",
+        "value" : "string",
+        "extra" : "$string:customizeData_description"
+      }]
+    },
     "abilities": [
       {
         "orientation": "unspecified",
         "visible": true,
-        "name": "com.example.module1.MainAbility",
+        "name": "com.chw.module1.MainAbility",
         "icon": "$media:icon",
         "description": "$string:mainability_description",
         "label": "$string:module1_MainAbility",
@@ -55,6 +102,18 @@
           }
         ]
       }
-    ]
+    ],
+    "defPermissions": [
+      {
+        "name": "chwpermission"
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.READ_MEDIA"
+      }
+    ],
+    "colorMode": "dark",
+    "resizeable": true
   }
 }

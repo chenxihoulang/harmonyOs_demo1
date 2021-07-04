@@ -19,6 +19,18 @@
     {
       "name": "widget_introduction",
       "value": "Introduction"
+    },
+    {
+      "name": "parameters_description",
+      "value": "channel_name"
+    },
+    {
+      "name": "results_description",
+      "value": "channel_name"
+    },
+    {
+      "name": "customizeData_description",
+      "value": "channel_name"
     }
   ]
 }

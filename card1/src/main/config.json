@@ -9,9 +9,9 @@
   },
   "deviceConfig": {},
   "module": {
-    "package": "com.example.card1",
+    "package": "com.chw.card1",
     "name": ".MyApplication",
-    "mainAbility": "com.example.card1.MainAbility",
+    "mainAbility": "com.chw.card1.MainAbility",
     "deviceType": [
       "phone"
     ],
@@ -25,7 +25,7 @@
       {
         "orientation": "unspecified",
         "visible": true,
-        "name": "com.example.card1.MainAbility",
+        "name": "com.chw.card1.MainAbility",
         "icon": "$media:icon",
         "description": "$string:mainability_description",
         "formsEnabled": true,

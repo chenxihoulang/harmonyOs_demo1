@@ -24,6 +24,8 @@ dependencies {
     testImplementation 'junit:junit:4.13'
     ohosTestImplementation 'com.huawei.ohos.testkit:runner:1.0.0.100'
 }
+
+//单元测试报告文件类型
 decc {
     supportType = ['html','xml']
 }
