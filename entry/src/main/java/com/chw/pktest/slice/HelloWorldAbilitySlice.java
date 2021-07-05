@@ -60,6 +60,11 @@ public class HelloWorldAbilitySlice extends AbilitySlice implements IAbilityCont
             //断开连接
             disconnectAbility(connection);
         });
+
+        Button btnDataProvider= (Button) findComponentById(ResourceTable.Id_btnDataProvider);
+        btnDataProvider.setClickedListener(listener->{
+
+        });
     }
 
     // 创建连接Service回调实例

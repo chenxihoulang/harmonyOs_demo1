@@ -36,6 +36,14 @@
           ],
           "when": "always"
         }
+      },
+      {
+        "name": "com.example.myapplication.DataAbilityShellProvider.PROVIDER",
+        "reason": "访问dataProvider需要的权限"
+      },
+      {
+        "name": "ohos.permission.READ_USER_STORAGE",
+        "reason": "访问dataProvider需要读取用户存储目录的权限"
       }
     ],
     "distro": {
@@ -93,6 +101,7 @@
         "icon": "$media:icon",
         "description": "$string:dataability_description",
         "type": "data",
+        "visible": true,
         "uri": "dataability://com.example.myapplication.DataAbility"
       },
       {
