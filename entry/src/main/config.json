@@ -17,7 +17,25 @@
     ],
     "reqPermissions": [
       {
-        "name": "ohos.permission.READ_MEDIA"
+        "name": "ohos.permission.READ_MEDIA",
+        "reason": "需要存储权限",
+        "usedScene": {
+          "ability": [
+            "com.chw.pktest.MainAbility"
+          ],
+          "when": "inuse"
+        }
+      },
+      {
+        "name": "ohos.permission.LOCATION_IN_BACKGROUND",
+        "reason": "用于持续定位",
+        "usedScene": {
+          "ability": [
+            "com.chw.pktest.MainAbility",
+            "com.chw.pktest.MainAbility2"
+          ],
+          "when": "always"
+        }
       }
     ],
     "distro": {
@@ -61,8 +79,7 @@
         "launchType": "standard",
         "visible": true,
         "uri": "pk://www.chw.com/test/?q=s",
-        "deviceCapability": [
-        ],
+        "deviceCapability": [],
         "mission": "chw.pktest.com",
         "targetAbility": ""
       },
@@ -105,18 +122,15 @@
         "icon": "$media:icon",
         "description": "$string:serviceability2_description",
         "type": "service"
-      }
-    ],
-    "reqPermissions": [
+      },
       {
-        "name": "ohos.permission.READ_MEDIA",
-        "reason": "需要存储权限",
-        "usedScene": {
-          "ability": [
-            "com.chw.pktest.MainAbility"
-          ],
-          "when": "inuse"
-        }
+        "orientation": "unspecified",
+        "name": "com.chw.pktest.MainAbility3",
+        "icon": "$media:icon",
+        "description": "$string:mainability3_description",
+        "label": "$string:entry_MainAbility3",
+        "type": "page",
+        "launchType": "standard"
       }
     ]
   }

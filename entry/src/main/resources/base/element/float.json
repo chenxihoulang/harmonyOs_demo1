@@ -59,6 +59,10 @@
     {
       "name": "margin",
       "value": "22vp"
+    },
+    {
+      "name": "margin_left",
+      "value": "$float:margin"
     }
   ]
 }

@@ -3,6 +3,9 @@
         {
             "name":"boolean_1",
             "value":true
+        },{
+            "name":"boolean_2",
+            "value":"$boolean:boolean_1"
         }
     ]
 }

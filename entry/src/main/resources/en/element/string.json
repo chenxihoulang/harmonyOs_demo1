@@ -11,6 +11,18 @@
     {
       "name": "mainability2_HelloWorld",
       "value": "Hello World"
+    },
+    {
+      "name": "entry_MainAbility3",
+      "value": "entry_MainAbility3"
+    },
+    {
+      "name": "mainability3_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability3_HelloWorld",
+      "value": "Hello World"
     }
   ]
 }

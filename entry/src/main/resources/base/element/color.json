@@ -27,6 +27,10 @@
     {
       "name": "primary_default",
       "value": "#000000"
+    },
+    {
+      "name": "primary_default1",
+      "value": "$color:primary_color"
     }
   ]
 }

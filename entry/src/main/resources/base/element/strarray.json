@@ -5,6 +5,9 @@
       "value": [
         {
           "value": "small"
+        },
+        {
+          "value": "$string:clickedHelp"
         }
       ]
     }

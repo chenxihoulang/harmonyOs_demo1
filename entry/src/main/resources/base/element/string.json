@@ -50,6 +50,7 @@
     },
     {
       "name": "loginSuccess",
+      "comment": "登录页面使用",
       "value": "Login Success"
     },
     {
@@ -83,6 +84,38 @@
     {
       "name": "serviceability2_description",
       "value": "hap sample empty service"
+    },
+    {
+      "name": "dialog_login_success_tip",
+      "comment": "登录页面使用",
+      "value": "登录成功"
+    },
+    {
+      "name": "message_arrive",
+      "value": [
+        "we will arrive at",
+        {
+          "id": "time",
+          "value": "%s",
+          "example": "5:00 am"
+        }
+      ]
+    },
+    {
+      "name": "str_ref",
+      "value": "$string:clickedPrivate"
+    },
+    {
+      "name": "mainability3_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "mainability3_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_MainAbility3",
+      "value": "entry_MainAbility3"
     }
   ]
 }

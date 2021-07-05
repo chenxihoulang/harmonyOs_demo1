@@ -16,6 +16,16 @@
           "value": "25px"
         }
       ]
+    },
+    {
+      "name": "child",
+      "parent": "base",
+      "value": [
+        {
+          "name": "noTitle",
+          "value": "Yes"
+        }
+      ]
     }
   ]
 }
