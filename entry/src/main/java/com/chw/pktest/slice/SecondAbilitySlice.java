@@ -1,13 +1,15 @@
 package com.chw.pktest.slice;
 
 import ohos.aafwk.ability.AbilitySlice;
+import ohos.aafwk.ability.IAbilityContinuation;
 import ohos.aafwk.content.Intent;
+import ohos.aafwk.content.IntentParams;
 import ohos.agp.colors.RgbColor;
 import ohos.agp.components.DependentLayout;
 import ohos.agp.components.Text;
 import ohos.agp.components.element.ShapeElement;
 
-public class SecondAbilitySlice extends AbilitySlice {
+public class SecondAbilitySlice extends AbilitySlice implements IAbilityContinuation {
     @Override
     protected void onStart(Intent intent) {
         super.onStart(intent);
@@ -33,5 +35,35 @@ public class SecondAbilitySlice extends AbilitySlice {
         layout.addComponent(text);
 
         super.setUIContent(layout);
+    }
+
+    @Override
+    protected void onActive() {
+        super.onActive();
+    }
+
+    @Override
+    public boolean onStartContinuation() {
+        return false;
+    }
+
+    @Override
+    public boolean onSaveData(IntentParams intentParams) {
+        return false;
+    }
+
+    @Override
+    public boolean onRestoreData(IntentParams intentParams) {
+        return false;
+    }
+
+    @Override
+    public void onCompleteContinuation(int i) {
+
+    }
+
+    @Override
+    public void onRemoteTerminated() {
+
     }
 }

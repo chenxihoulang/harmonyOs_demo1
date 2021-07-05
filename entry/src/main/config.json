@@ -135,6 +135,14 @@
       {
         "orientation": "unspecified",
         "name": "com.chw.pktest.HelloWorldAbility",
+        "skills": [
+          {
+            "actions": [
+              "action.hello",
+              "action.second"
+            ]
+          }
+        ],
         "icon": "$media:icon",
         "description": "$string:helloworldability_description",
         "label": "$string:entry_HelloWorldAbility",
