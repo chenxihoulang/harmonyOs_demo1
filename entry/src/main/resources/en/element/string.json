@@ -23,6 +23,18 @@
     {
       "name": "mainability3_HelloWorld",
       "value": "Hello World"
+    },
+    {
+      "name": "entry_HelloWorldAbility",
+      "value": "entry_HelloWorldAbility"
+    },
+    {
+      "name": "helloworldability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "helloworldability_HelloWorld",
+      "value": "Hello World"
     }
   ]
 }

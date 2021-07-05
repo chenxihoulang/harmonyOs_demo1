@@ -116,6 +116,26 @@
     {
       "name": "entry_MainAbility3",
       "value": "entry_MainAbility3"
+    },
+    {
+      "name": "helloworldability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "helloworldability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_HelloWorldAbility",
+      "value": "entry_HelloWorldAbility"
+    },
+    {
+      "name": "firstPage",
+      "value": "首页"
+    },
+    {
+      "name": "actionNext",
+      "value": "下一页"
     }
   ]
 }
