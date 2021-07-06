@@ -196,6 +196,18 @@
     {
       "name": "entry_ThreadCommunicationAbility",
       "value": "entry_ThreadCommunicationAbility"
+    },
+    {
+      "name": "pasteboardability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "pasteboardability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_PasteBoardAbility",
+      "value": "entry_PasteBoardAbility"
     }
   ]
 }

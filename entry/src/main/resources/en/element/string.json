@@ -95,6 +95,18 @@
     {
       "name": "threadcommunicationability_HelloWorld",
       "value": "Hello World"
+    },
+    {
+      "name": "entry_PasteBoardAbility",
+      "value": "entry_PasteBoardAbility"
+    },
+    {
+      "name": "pasteboardability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "pasteboardability_HelloWorld",
+      "value": "Hello World"
     }
   ]
 }

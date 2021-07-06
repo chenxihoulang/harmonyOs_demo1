@@ -74,7 +74,7 @@ public class ThreadCommunicationAbilitySlice extends AbilitySlice {
         //将当前线程的EventRunner传递给EventHandler,然后在processEvent中根据传递过来的EventRunner对象创建EventHandler,
         //再使用新创建的EventHandler对象发送事件,新事件就会在原来线程执行
         InnerEvent event2 = InnerEvent.get(EVENT_MESSAGE_CROSS_THREAD, 0L, EventRunner.current());
-        MyEventHandler myEventHandler=new MyEventHandler(runner);
+        MyEventHandler myEventHandler = new MyEventHandler(runner);
         myEventHandler.sendEvent(event2);
     }
 
@@ -84,6 +84,7 @@ public class ThreadCommunicationAbilitySlice extends AbilitySlice {
         private MyEventHandler(EventRunner runner) {
             super(runner);
         }
+
         // 重写实现processEvent方法
         @Override
         public void processEvent(InnerEvent event) {
