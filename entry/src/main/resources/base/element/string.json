@@ -160,6 +160,18 @@
     {
       "name": "entry_IntentAgentAbility",
       "value": "entry_IntentAgentAbility"
+    },
+    {
+      "name": "reminderability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "reminderability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_ReminderAbility",
+      "value": "entry_ReminderAbility"
     }
   ]
 }

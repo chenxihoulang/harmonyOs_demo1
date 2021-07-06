@@ -59,6 +59,18 @@
     {
       "name": "intentagentability_HelloWorld",
       "value": "Hello World"
+    },
+    {
+      "name": "entry_ReminderAbility",
+      "value": "entry_ReminderAbility"
+    },
+    {
+      "name": "reminderability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "reminderability_HelloWorld",
+      "value": "Hello World"
     }
   ]
 }
