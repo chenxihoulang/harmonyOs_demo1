@@ -124,7 +124,14 @@
         "description": "$string:mainability2_description",
         "label": "$string:entry_MainAbility2",
         "type": "page",
-        "launchType": "standard"
+        "launchType": "standard",
+        "skills": [
+          {
+            "actions": [
+              "ability.intent.QUERY_WEATHER"
+            ]
+          }
+        ]
       },
       {
         "backgroundModes": [

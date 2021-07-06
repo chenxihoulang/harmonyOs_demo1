@@ -17,6 +17,11 @@ import ohos.agp.components.Component;
 import ohos.bundle.ElementName;
 import ohos.rpc.IRemoteObject;
 import ohos.security.NetworkSecurityPolicy;
+import ohos.utils.IntentConstants;
+import ohos.utils.net.Uri;
+
+import java.util.HashSet;
+import java.util.Set;
 
 public class HelloWorldAbilitySlice extends AbilitySlice implements IAbilityContinuation {
     private static final String TAG = HelloWorldAbilitySlice.class.getSimpleName();
@@ -56,14 +61,44 @@ public class HelloWorldAbilitySlice extends AbilitySlice implements IAbilityCont
 //            startAbility(intent1);
 
             // 连接Service
-            connectAbility(intent1,connection);
+            connectAbility(intent1, connection);
             //断开连接
             disconnectAbility(connection);
         });
 
-        Button btnDataProvider= (Button) findComponentById(ResourceTable.Id_btnDataProvider);
-        btnDataProvider.setClickedListener(listener->{
+        Button btnDataProvider = (Button) findComponentById(ResourceTable.Id_btnDataProvider);
+        btnDataProvider.setClickedListener(listener -> {
+            //参考com.chw.pktest.DataAbility各方法里面的代码
+        });
 
+        Button btnIntent = (Button) findComponentById(ResourceTable.Id_btnIntent);
+        btnIntent.setClickedListener(listener -> {
+            Set<String> entities = new HashSet<>();
+            entities.add(IntentConstants.ENTITY_HOME);
+
+            Intent intent1 = new Intent();
+            Operation operation = new Intent.OperationBuilder()
+                    .withAction(IntentConstants.ACTION_HOME)
+                    .withEntities(entities)
+                    .withUri(Uri.parse("pk://www.chw.com"))
+                    .withFlags(Intent.FLAG_ABILITY_CONTINUATION)
+                    //当前设备
+                    .withDeviceId("")
+                    .withBundleName(ServiceAbility.class.getPackage().getName())
+                    .withAbilityName(ServiceAbility.class)
+                    .build();
+            intent1.setOperation(operation);
+            intent1.setParam("name","chw");
+
+//            startAbility(intent1);
+            startAbilityForResult(intent1,1);
+
+            Intent intent2 = new Intent();
+            Operation operation2 = new Intent.OperationBuilder()
+                    .withAction(Intent.ACTION_QUERY_WEATHER)
+                    .build();
+            intent2.setOperation(operation2);
+            startAbilityForResult(intent2, 2);
         });
     }
 
