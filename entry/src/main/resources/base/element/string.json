@@ -208,6 +208,30 @@
     {
       "name": "entry_PasteBoardAbility",
       "value": "entry_PasteBoardAbility"
+    },
+    {
+      "name": "permissionability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "permissionability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_PermissionAbility",
+      "value": "entry_PermissionAbility"
+    },
+    {
+      "name": "componentlayoutability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "componentlayoutability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_ComponentLayoutAbility",
+      "value": "entry_ComponentLayoutAbility"
     }
   ]
 }

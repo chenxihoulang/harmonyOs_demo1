@@ -107,6 +107,30 @@
     {
       "name": "pasteboardability_HelloWorld",
       "value": "Hello World"
+    },
+    {
+      "name": "entry_PermissionAbility",
+      "value": "entry_PermissionAbility"
+    },
+    {
+      "name": "permissionability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "permissionability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_ComponentLayoutAbility",
+      "value": "entry_ComponentLayoutAbility"
+    },
+    {
+      "name": "componentlayoutability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "componentlayoutability_HelloWorld",
+      "value": "Hello World"
     }
   ]
 }

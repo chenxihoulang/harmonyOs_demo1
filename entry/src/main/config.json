@@ -239,6 +239,24 @@
         "label": "$string:entry_PasteBoardAbility",
         "type": "page",
         "launchType": "standard"
+      },
+      {
+        "orientation": "unspecified",
+        "name": "com.chw.pktest.PermissionAbility",
+        "icon": "$media:icon",
+        "description": "$string:permissionability_description",
+        "label": "$string:entry_PermissionAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "unspecified",
+        "name": "com.chw.pktest.ComponentLayoutAbility",
+        "icon": "$media:icon",
+        "description": "$string:componentlayoutability_description",
+        "label": "$string:entry_ComponentLayoutAbility",
+        "type": "page",
+        "launchType": "standard"
       }
     ]
   }

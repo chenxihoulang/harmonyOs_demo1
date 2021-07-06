@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:alignment="center"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:additional_line_spacing="1.2"
+        ohos:auto_scrolling_duration="1000"
+        ohos:background_element="$graphic:background_ability_component_layout"
+        ohos:bubble_width="10vp"
+        ohos:element_padding="10vp"
+        ohos:element_selection_left_bubble="$media:icon"
+        ohos:hint="$string:actionNext"
+        ohos:hint_color="$color:appbar_subtitle_color"
+        ohos:input_enter_key_type="enter_key_type_send"
+        ohos:layout_alignment="horizontal_center"
+        ohos:max_text_lines="5"
+        ohos:multiple_lines="true"
+        ohos:padding_for_text="true"
+        ohos:scrollable="true"
+        ohos:selection_color="$color:appbar_title_color"
+        ohos:text="$string:login"
+        ohos:text_alignment="center"
+        ohos:text_cursor_visible="true"
+        ohos:text_font="HwChinese-medium"
+        ohos:text_input_type="pattern_password"
+        ohos:text_size="40vp"
+        ohos:truncation_mode="auto_scrolling"
+        ohos:visibility="visible"
+        />
+
+    <Text
+        ohos:id="$+id:text"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:auto_scrolling_count="unlimited"
+        ohos:background_element="$graphic:background_ability_component_layout"
+        ohos:italic="true"
+        ohos:text="TextText"
+        ohos:text_color="#0000FF"
+        ohos:text_font="serif"
+        ohos:text_size="28fp"
+        ohos:text_weight="700"
+        ohos:truncation_mode="auto_scrolling"/>
+
+</DirectionalLayout>
