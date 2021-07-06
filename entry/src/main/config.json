@@ -212,6 +212,15 @@
         "label": "$string:entry_ReminderAbility",
         "type": "page",
         "launchType": "standard"
+      },
+      {
+        "orientation": "unspecified",
+        "name": "com.chw.pktest.ThreadTestAbility",
+        "icon": "$media:icon",
+        "description": "$string:threadtestability_description",
+        "label": "$string:entry_ThreadTestAbility",
+        "type": "page",
+        "launchType": "standard"
       }
     ]
   }

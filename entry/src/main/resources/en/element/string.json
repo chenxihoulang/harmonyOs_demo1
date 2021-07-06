@@ -71,6 +71,18 @@
     {
       "name": "reminderability_HelloWorld",
       "value": "Hello World"
+    },
+    {
+      "name": "entry_ThreadTestAbility",
+      "value": "entry_ThreadTestAbility"
+    },
+    {
+      "name": "threadtestability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "threadtestability_HelloWorld",
+      "value": "Hello World"
     }
   ]
 }

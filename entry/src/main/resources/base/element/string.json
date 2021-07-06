@@ -172,6 +172,18 @@
     {
       "name": "entry_ReminderAbility",
       "value": "entry_ReminderAbility"
+    },
+    {
+      "name": "threadtestability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "threadtestability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_ThreadTestAbility",
+      "value": "entry_ThreadTestAbility"
     }
   ]
 }
