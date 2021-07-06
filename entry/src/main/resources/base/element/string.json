@@ -184,6 +184,18 @@
     {
       "name": "entry_ThreadTestAbility",
       "value": "entry_ThreadTestAbility"
+    },
+    {
+      "name": "threadcommunicationability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "threadcommunicationability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_ThreadCommunicationAbility",
+      "value": "entry_ThreadCommunicationAbility"
     }
   ]
 }

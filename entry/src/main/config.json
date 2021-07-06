@@ -221,6 +221,15 @@
         "label": "$string:entry_ThreadTestAbility",
         "type": "page",
         "launchType": "standard"
+      },
+      {
+        "orientation": "unspecified",
+        "name": "com.chw.pktest.ThreadCommunicationAbility",
+        "icon": "$media:icon",
+        "description": "$string:threadcommunicationability_description",
+        "label": "$string:entry_ThreadCommunicationAbility",
+        "type": "page",
+        "launchType": "standard"
       }
     ]
   }

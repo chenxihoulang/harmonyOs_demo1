@@ -83,6 +83,18 @@
     {
       "name": "threadtestability_HelloWorld",
       "value": "Hello World"
+    },
+    {
+      "name": "entry_ThreadCommunicationAbility",
+      "value": "entry_ThreadCommunicationAbility"
+    },
+    {
+      "name": "threadcommunicationability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "threadcommunicationability_HelloWorld",
+      "value": "Hello World"
     }
   ]
 }
