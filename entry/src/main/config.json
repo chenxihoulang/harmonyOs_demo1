@@ -44,6 +44,20 @@
       {
         "name": "ohos.permission.READ_USER_STORAGE",
         "reason": "访问dataProvider需要读取用户存储目录的权限"
+      },
+      {
+        "name": "ohos.permission.COMMONEVENT_STICKY",
+        "reason": "发送粘性公共事件",
+        "usedScene": {
+          "ability": [
+            "com.chw.pktest.MainAbility2"
+          ],
+          "when": "inuse"
+        }
+      },
+      {
+        "name": "com.chw.pktest.permission",
+        "reason": "带权限的事件"
       }
     ],
     "distro": {
@@ -165,6 +179,24 @@
         "icon": "$media:icon",
         "description": "$string:helloworldability_description",
         "label": "$string:entry_HelloWorldAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "unspecified",
+        "name": "com.chw.pktest.NotificationAbility",
+        "icon": "$media:icon",
+        "description": "$string:notificationability_description",
+        "label": "$string:entry_NotificationAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "unspecified",
+        "name": "com.chw.pktest.IntentAgentAbility",
+        "icon": "$media:icon",
+        "description": "$string:intentagentability_description",
+        "label": "$string:entry_IntentAgentAbility",
         "type": "page",
         "launchType": "standard"
       }

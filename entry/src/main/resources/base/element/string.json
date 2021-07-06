@@ -136,6 +136,30 @@
     {
       "name": "actionNext",
       "value": "下一页"
+    },
+    {
+      "name": "notificationability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "notificationability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_NotificationAbility",
+      "value": "entry_NotificationAbility"
+    },
+    {
+      "name": "intentagentability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "intentagentability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_IntentAgentAbility",
+      "value": "entry_IntentAgentAbility"
     }
   ]
 }

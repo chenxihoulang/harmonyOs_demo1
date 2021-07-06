@@ -35,6 +35,30 @@
     {
       "name": "helloworldability_HelloWorld",
       "value": "你好，世界"
+    },
+    {
+      "name": "entry_NotificationAbility",
+      "value": "entry_NotificationAbility"
+    },
+    {
+      "name": "notificationability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "notificationability_HelloWorld",
+      "value": "你好，世界"
+    },
+    {
+      "name": "entry_IntentAgentAbility",
+      "value": "entry_IntentAgentAbility"
+    },
+    {
+      "name": "intentagentability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "intentagentability_HelloWorld",
+      "value": "你好，世界"
     }
   ]
 }
