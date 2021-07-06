@@ -143,6 +143,30 @@
     {
       "name": "networkability_HelloWorld",
       "value": "Hello World"
+    },
+    {
+      "name": "entry_LightAbility",
+      "value": "entry_LightAbility"
+    },
+    {
+      "name": "lightability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "lightability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_VibratorAbility",
+      "value": "entry_VibratorAbility"
+    },
+    {
+      "name": "vibratorability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "vibratorability_HelloWorld",
+      "value": "Hello World"
     }
   ]
 }

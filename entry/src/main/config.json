@@ -334,6 +334,24 @@
         "label": "$string:entry_NetworkAbility",
         "type": "page",
         "launchType": "standard"
+      },
+      {
+        "orientation": "unspecified",
+        "name": "com.chw.pktest.LightAbility",
+        "icon": "$media:icon",
+        "description": "$string:lightability_description",
+        "label": "$string:entry_LightAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "unspecified",
+        "name": "com.chw.pktest.VibratorAbility",
+        "icon": "$media:icon",
+        "description": "$string:vibratorability_description",
+        "label": "$string:entry_VibratorAbility",
+        "type": "page",
+        "launchType": "standard"
       }
     ]
   }
