@@ -62,6 +62,64 @@
       {
         "name": "ohos.permission.PUBLISH_AGENT_REMINDER",
         "reason": "后台提醒权限"
+      },
+      {
+        "name": "ohos.permission.CAMERA",
+        "reason": "$string:permission_camera",
+        "usedScene": {
+          "ability": [
+            "com.chw.pktest.MainAbility",
+            "com.chw.pktest.MainAbility2"
+          ],
+          "when": "inuse"
+        }
+      },
+      {
+        "name": "ohos.permission.GET_NETWORK_INFO"
+      },
+      {
+        "name": "ohos.permission.GET_WIFI_INFO"
+      },
+      {
+        "name": "ohos.permission.WRITE_USER_STORAGE"
+      },
+      {
+        "name": "ohos.permission.WRITE_MEDIA"
+      },
+      {
+        "name": "ohos.permission.MEDIA_LOCATION"
+      },
+      {
+        "name": "ohos.permission.LOCATION"
+      },
+      {
+        "name": "ohos.permission.INTERNET",
+        "reason": "非敏感权限"
+      },
+      {
+        "name": "ohos.permission.CLEAN_BACKGROUND_PROCESSES",
+        "reason": "非敏感权限,允许根据包名清理相关后台进程"
+      },
+      {
+        "name": "ohos.permission.GET_BUNDLE_INFO",
+        "reason": "查询其他应用的信息"
+      },
+      {
+        "name": "ohos.permission.READ_CONTACTS",
+        "reason": "请提供相关申请材料到应用市场申请相应权限证书,允许应用读取联系人数据"
+      },
+      {
+        "name": "ohos.permission.WRITE_CONTACTS",
+        "reason": "请提供相关申请材料到应用市场申请相应权限证书,允许应用添加、移除和更改联系人数据"
+      }
+    ],
+    "defPermissions": [
+      {
+        "name": "com.chw.pktest.permission",
+        "grantMode": "system_grant",
+        "availableScope": "signature",
+        "label": "权限的简短描述",
+        "description": "权限的想象描述"
       }
     ],
     "distro": {
@@ -107,7 +165,10 @@
         "uri": "pk://www.chw.com/test/?q=s",
         "deviceCapability": [],
         "mission": "chw.pktest.com",
-        "targetAbility": ""
+        "targetAbility": "",
+        "permissions": [
+          "ohos.permission.READ_USER_STORAGE"
+        ]
       },
       {
         "permissions": [

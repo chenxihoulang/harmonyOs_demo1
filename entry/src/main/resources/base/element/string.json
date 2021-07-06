@@ -232,6 +232,10 @@
     {
       "name": "entry_ComponentLayoutAbility",
       "value": "entry_ComponentLayoutAbility"
+    },
+    {
+      "name": "permission_camera",
+      "value": "拍摄视频需要使用相机"
     }
   ]
 }
