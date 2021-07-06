@@ -236,6 +236,18 @@
     {
       "name": "permission_camera",
       "value": "拍摄视频需要使用相机"
+    },
+    {
+      "name": "networkability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "networkability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_NetworkAbility",
+      "value": "entry_NetworkAbility"
     }
   ]
 }

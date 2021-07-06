@@ -131,6 +131,18 @@
     {
       "name": "componentlayoutability_HelloWorld",
       "value": "Hello World"
+    },
+    {
+      "name": "entry_NetworkAbility",
+      "value": "entry_NetworkAbility"
+    },
+    {
+      "name": "networkability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "networkability_HelloWorld",
+      "value": "Hello World"
     }
   ]
 }

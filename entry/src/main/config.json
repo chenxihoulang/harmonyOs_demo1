@@ -75,9 +75,6 @@
         }
       },
       {
-        "name": "ohos.permission.GET_NETWORK_INFO"
-      },
-      {
         "name": "ohos.permission.GET_WIFI_INFO"
       },
       {
@@ -97,6 +94,12 @@
         "reason": "非敏感权限"
       },
       {
+        "name": "ohos.permission.GET_NETWORK_INFO"
+      },
+      {
+        "name": "ohos.permission.SET_NETWORK_INFO"
+      },
+      {
         "name": "ohos.permission.CLEAN_BACKGROUND_PROCESSES",
         "reason": "非敏感权限,允许根据包名清理相关后台进程"
       },
@@ -111,6 +114,10 @@
       {
         "name": "ohos.permission.WRITE_CONTACTS",
         "reason": "请提供相关申请材料到应用市场申请相应权限证书,允许应用添加、移除和更改联系人数据"
+      },
+      {
+        "name": "ohos.permission.VIBRATE",
+        "reason": "振动需要的权限"
       }
     ],
     "defPermissions": [
@@ -316,6 +323,15 @@
         "icon": "$media:icon",
         "description": "$string:componentlayoutability_description",
         "label": "$string:entry_ComponentLayoutAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "unspecified",
+        "name": "com.chw.pktest.NetworkAbility",
+        "icon": "$media:icon",
+        "description": "$string:networkability_description",
+        "label": "$string:entry_NetworkAbility",
         "type": "page",
         "launchType": "standard"
       }
