@@ -118,6 +118,10 @@
       {
         "name": "ohos.permission.VIBRATE",
         "reason": "振动需要的权限"
+      },
+      {
+        "name": "ohos.permission.DISTRIBUTED_DATASYNC",
+        "reason": "获取分布式虚拟设备id"
       }
     ],
     "defPermissions": [
