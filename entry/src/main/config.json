@@ -356,6 +356,15 @@
         "label": "$string:entry_VibratorAbility",
         "type": "page",
         "launchType": "standard"
+      },
+      {
+        "orientation": "unspecified",
+        "name": "com.chw.pktest.ORMDatabaseAbility",
+        "icon": "$media:icon",
+        "description": "$string:ormdatabaseability_description",
+        "label": "$string:entry_ORMDatabaseAbility",
+        "type": "page",
+        "launchType": "standard"
       }
     ]
   }

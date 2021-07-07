@@ -272,6 +272,18 @@
     {
       "name": "entry_VibratorAbility",
       "value": "entry_VibratorAbility"
+    },
+    {
+      "name": "ormdatabaseability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "ormdatabaseability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_ORMDatabaseAbility",
+      "value": "entry_ORMDatabaseAbility"
     }
   ]
 }

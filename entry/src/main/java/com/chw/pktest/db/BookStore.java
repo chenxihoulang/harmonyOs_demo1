@@ -2,16 +2,9 @@ package com.chw.pktest.db;
 
 import ohos.data.orm.OrmDatabase;
 import ohos.data.orm.OrmObject;
+import ohos.data.orm.annotation.Database;
 import ohos.data.rdb.RdbOpenCallback;
 
-public class BookStore extends OrmDatabase {
-    @Override
-    public int getVersion() {
-        return 0;
-    }
-
-    @Override
-    public RdbOpenCallback getHelper() {
-        return null;
-    }
+@Database(entities = {User.class, Book.class, AllDataType.class}, version = 2)
+public abstract class BookStore extends OrmDatabase {
 }
