@@ -284,6 +284,18 @@
     {
       "name": "entry_ORMDatabaseAbility",
       "value": "entry_ORMDatabaseAbility"
+    },
+    {
+      "name": "preferencedatabaseability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "preferencedatabaseability_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_PreferenceDataBaseAbility",
+      "value": "entry_PreferenceDataBaseAbility"
     }
   ]
 }

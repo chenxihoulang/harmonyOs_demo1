@@ -179,6 +179,18 @@
     {
       "name": "ormdatabaseability_HelloWorld",
       "value": "你好，世界"
+    },
+    {
+      "name": "entry_PreferenceDataBaseAbility",
+      "value": "entry_PreferenceDataBaseAbility"
+    },
+    {
+      "name": "preferencedatabaseability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "preferencedatabaseability_HelloWorld",
+      "value": "你好，世界"
     }
   ]
 }

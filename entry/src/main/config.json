@@ -365,6 +365,15 @@
         "label": "$string:entry_ORMDatabaseAbility",
         "type": "page",
         "launchType": "standard"
+      },
+      {
+        "orientation": "unspecified",
+        "name": "com.chw.pktest.PreferenceDataBaseAbility",
+        "icon": "$media:icon",
+        "description": "$string:preferencedatabaseability_description",
+        "label": "$string:entry_PreferenceDataBaseAbility",
+        "type": "page",
+        "launchType": "standard"
       }
     ]
   }
