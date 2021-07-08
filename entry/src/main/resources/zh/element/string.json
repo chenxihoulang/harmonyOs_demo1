@@ -191,6 +191,18 @@
     {
       "name": "preferencedatabaseability_HelloWorld",
       "value": "你好，世界"
+    },
+    {
+      "name": "entry_WebViewAbility",
+      "value": "entry_WebViewAbility"
+    },
+    {
+      "name": "webviewability_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "webviewability_HelloWorld",
+      "value": "你好，世界"
     }
   ]
 }

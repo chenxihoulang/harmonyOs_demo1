@@ -374,6 +374,28 @@
         "label": "$string:entry_PreferenceDataBaseAbility",
         "type": "page",
         "launchType": "standard"
+      },
+      {
+        "orientation": "unspecified",
+        "name": "com.chw.pktest.WebViewAbility",
+        "icon": "$media:icon",
+        "description": "$string:webviewability_description",
+        "label": "$string:entry_WebViewAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "name": "com.chw.pktest.ExampleDataAbility",
+        "type": "data",
+        "uri": "dataability://com.example.dataability",
+        "metaData": {
+          "customizeData": [
+            {
+              "name": "com.example.provider",
+              "extra": "$profile:path"
+            }
+          ]
+        }
       }
     ]
   }
