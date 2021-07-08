@@ -24,6 +24,10 @@
         {
           "name": "noTitle",
           "value": "Yes"
+        },
+        {
+          "name": "padding",
+          "value": "32vp"
         }
       ]
     }

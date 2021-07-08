@@ -9,6 +9,38 @@
     <WebView
         ohos:id="$+id:webview"
         ohos:height="match_parent"
-        ohos:width="match_parent"/>
+        ohos:width="match_parent"
+        ohos:background_element="$media:icon"
+        ohos:component_description="描述"
+        ohos:scrollbar_background_color="$color:appbar_title_color"
+        ohos:scrollbar_color="$color:appbar_subtitle_color"
+        ohos:scrollbar_fading_delay="$integer:integer_1"
+        ohos:scrollbar_fading_duration="$integer:integer_1"
+        ohos:scrollbar_fading_enabled="true"
+        ohos:scrollbar_overlap_enabled="true"
+        ohos:scrollbar_start_angle="30"
+        ohos:scrollbar_sweep_angle="45"
+        ohos:scrollbar_thickness="$float:defaultHeight"
+        ohos:theme="$pattern:base"/>
+
+    <TextField
+        ohos:id="$+id:tfName"
+        ohos:height="match_parent"
+        ohos:width="match_content"
+        ohos:element_cursor_bubble="$color:appbar_title_color"
+        ohos:focus_border_enable="true"
+        ohos:focus_border_padding="2vp"
+        ohos:focus_border_radius="8vp"
+        ohos:focus_border_width="2vp"
+        ohos:focusable="focus_enable"
+        ohos:focusable_in_touch="true"
+        ohos:pivot_x="20vp"
+        ohos:pivot_y="20vp"
+        ohos:rotate="45"
+        ohos:scale_x="1.2"
+        ohos:scale_y="1.5"
+        ohos:translation_x="100"
+        ohos:translation_y="100"
+        ohos:truncation_mode="auto_scrolling"/>
 
 </DirectionalLayout>
