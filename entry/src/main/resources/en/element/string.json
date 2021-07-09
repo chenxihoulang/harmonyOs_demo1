@@ -203,6 +203,18 @@
     {
       "name": "webviewability_HelloWorld",
       "value": "Hello World"
+    },
+    {
+      "name": "entry_AdaptiveBoxLayoutAblity",
+      "value": "entry_AdaptiveBoxLayoutAblity"
+    },
+    {
+      "name": "adaptiveboxlayoutablity_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "adaptiveboxlayoutablity_HelloWorld",
+      "value": "Hello World"
     }
   ]
 }

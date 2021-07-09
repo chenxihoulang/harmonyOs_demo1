@@ -4,11 +4,14 @@
     ohos:height="match_parent"
     ohos:width="match_parent"
     ohos:alignment="center"
+    ohos:total_weight="5"
     ohos:orientation="vertical">
 
     <WebView
         ohos:id="$+id:webview"
         ohos:height="match_parent"
+        ohos:layout_alignment="center"
+        ohos:weight="4"
         ohos:width="match_parent"
         ohos:background_element="$media:icon"
         ohos:component_description="描述"
@@ -27,6 +30,7 @@
         ohos:id="$+id:tfName"
         ohos:height="match_parent"
         ohos:width="match_content"
+        ohos:weight="1"
         ohos:element_cursor_bubble="$color:appbar_title_color"
         ohos:focus_border_enable="true"
         ohos:focus_border_padding="2vp"

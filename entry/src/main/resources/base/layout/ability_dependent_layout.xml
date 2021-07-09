@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DependentLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:id="$+id:text1"
+        ohos:height="match_parent"
+        ohos:width="match_content"
+        ohos:center_in_parent="true"/>
+
+    <Text
+        ohos:id="$+id:text2"
+        ohos:height="match_parent"
+        ohos:width="match_content"
+        ohos:left_of="$id:text1"/>
+
+    <Text
+        ohos:id="$+id:text3"
+        ohos:height="match_parent"
+        ohos:width="match_content"
+        ohos:above="$id:text1"
+        ohos:left_of="$id:text1"/>
+
+    <Text
+        ohos:id="$+id:text4"
+        ohos:height="match_parent"
+        ohos:width="match_content"
+        ohos:below="$id:text1"
+        ohos:left_of="$id:text1"/>
+
+    <TextField
+        ohos:height="match_parent"
+        ohos:width="match_content"
+        ohos:align_baseline="$id:text1"
+        ohos:align_left="$id:text1"
+        ohos:align_top="$id:text1"/>
+
+    <Text
+        ohos:id="$+id:text6"
+        ohos:height="match_parent"
+        ohos:width="match_content"
+        ohos:align_parent_left="true"
+        ohos:align_parent_top="true"/>
+
+    <TextField
+        ohos:height="match_parent"
+        ohos:width="match_content"
+        ohos:horizontal_center="true"
+        ohos:vertical_center="true"/>
+</DependentLayout>

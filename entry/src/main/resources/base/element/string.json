@@ -308,6 +308,18 @@
     {
       "name": "entry_WebViewAbility",
       "value": "entry_WebViewAbility"
+    },
+    {
+      "name": "adaptiveboxlayoutablity_description",
+      "value": "Java_Empty Ability"
+    },
+    {
+      "name": "adaptiveboxlayoutablity_HelloWorld",
+      "value": "Hello World"
+    },
+    {
+      "name": "entry_AdaptiveBoxLayoutAblity",
+      "value": "entry_AdaptiveBoxLayoutAblity"
     }
   ]
 }
